@@ -19,9 +19,7 @@ public class Person {
     public boolean equals(Object obj) {
         if (obj instanceof Person) {
             Person p = (Person)obj;
-            if (this.name.equals(p.name)) {
-                return true;
-            }
+            return this.name.equals(p.name) && this.familyName.equals(p.familyName);
         }
         return false;
     }
