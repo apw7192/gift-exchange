@@ -10,6 +10,10 @@ public class Person {
         this.familyName = familyName;
     }
 
+    public String getFamilyName() {
+        return familyName;
+    }
+
     @Override
     public String toString() {
         return name + " " + familyName;
